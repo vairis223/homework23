@@ -7,13 +7,16 @@ public class SadFor {
         System.out.println(test1());
     }
 
+
     public static int test1() {
 //fixme
-//        for (int i = 0; i < 10; i++) {
-//            if (Math.sqrt(i) > 2.5)
-//                break;
-//        }
-//        return i;
-        throw new NoCodeWrittenException();
+        int i;
+        for (i = 0; i < 10; i++) {
+            if (Math.sqrt(i) > 2.5)
+                break;
+        }
+        return i;
+        //throw new NoCodeWrittenException();
+
     }
 }
