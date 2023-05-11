@@ -13,10 +13,9 @@ public class Exercise1 {
     }
 
     public static boolean calculate(int x, int y) {
-        if (x == 15 || y == 15)
-            return true;
-        return ((x + y) == 15 || Math.abs(x - y) == 15);
-
+        return x == 15 || y == 15 || (x + y) == 15 || Math.abs(x - y) == 15;
     }
+
+
 }
 
