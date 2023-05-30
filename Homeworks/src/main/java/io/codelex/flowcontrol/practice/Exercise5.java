@@ -4,33 +4,17 @@ import java.util.Scanner;
 
 public class Exercise5 {
     public static int getNumber(char lowerCaseLetter) {
-        int number = 0;
-        switch (lowerCaseLetter) {
-            case 'a', 'b', 'c':
-                number = 2;
-                break;
-            case 'd', 'e', 'f':
-                number = 3;
-                break;
-            case 'g', 'h', 'i':
-                number = 4;
-                break;
-            case 'j', 'k', 'l':
-                number = 5;
-                break;
-            case 'm', 'n', 'o':
-                number = 6;
-                break;
-            case 'p', 'q', 'r', 's':
-                number = 7;
-                break;
-            case 't', 'u', 'v':
-                number = 8;
-                break;
-            case 'w', 'x', 'y', 'z':
-                number = 9;
-                break;
-        }
+        int number = switch (lowerCaseLetter) {
+            case 'a', 'b', 'c' -> 2;
+            case 'd', 'e', 'f' -> 3;
+            case 'g', 'h', 'i' -> 4;
+            case 'j', 'k', 'l' -> 5;
+            case 'm', 'n', 'o' -> 6;
+            case 'p', 'q', 'r', 's' -> 7;
+            case 't', 'u', 'v' -> 8;
+            case 'w', 'x', 'y', 'z' -> 9;
+            default -> 0;
+        };
         return number;
     }
 
