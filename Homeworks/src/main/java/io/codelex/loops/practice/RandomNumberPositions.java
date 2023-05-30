@@ -17,7 +17,7 @@ public class RandomNumberPositions {
         int searchFor = scanner.nextInt();
 
         int i;
-        boolean foundIt = false;
+        boolean foundIt = true;
 
         for (i = 0; i < integers.length; i++) {
             //todo - search for integer - break when you have found what you searched for
