@@ -1,4 +1,4 @@
-# Practice
+ # Practice
 
 ## Exercise #1 - LazyBox
 Sometimes initializing of an object takes a long time for example when there is a need to do a lot of calculations
