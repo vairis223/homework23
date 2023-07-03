@@ -13,7 +13,7 @@ public class Quiz1 {
 
         // Which one is an iteration using Stream API
         // 1.
-        for (int i = 0; i < persons.size(); i++) {
+      for (int i = 0; i < persons.size(); i++) {
             System.out.println(persons.get(i));
         }
         // 2.
@@ -21,7 +21,7 @@ public class Quiz1 {
             System.out.println(person);
         }
         // 3.
-        System.out.println(persons);
+       System.out.println(persons);
         // 4.
         persons.forEach(System.out::println);
     }
