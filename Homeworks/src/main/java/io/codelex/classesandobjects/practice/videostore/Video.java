@@ -1,10 +1,17 @@
 package io.codelex.classesandobjects.practice.videostore;
 
 public class Video {
+<<<<<<< Updated upstream
     String title;
     boolean checkOut;
     double averageRating;
     int numberOfRatings;
+=======
+    private String title;
+    private boolean checkOut;
+    private double averageRating;
+    private int numberOfRatings;
+>>>>>>> Stashed changes
 
 
     public Video(String title) {
@@ -37,11 +44,18 @@ public class Video {
     }
 
     public void receiveRating(int rating) {
+<<<<<<< Updated upstream
 
 
     }
 
     public void addVideo(Video video) {
+=======
+        double totalRating = averageRating * numberOfRatings;
+        totalRating += rating;
+        numberOfRatings++;
+        averageRating = totalRating / numberOfRatings;
+>>>>>>> Stashed changes
 
     }
 
@@ -60,5 +74,8 @@ public class Video {
     }
 }
 
+<<<<<<< Updated upstream
 
 
+=======
+>>>>>>> Stashed changes

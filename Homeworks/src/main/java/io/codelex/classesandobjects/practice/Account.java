@@ -52,4 +52,9 @@ public class Account {
         System.out.println(accountB);
         System.out.println(accountC);
     }
+
+    public static void transfer(Account from, Account to, double howMuch) {
+        from.withdrawal(howMuch);
+        to.deposit(howMuch);
+    }
 }

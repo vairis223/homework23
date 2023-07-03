@@ -36,6 +36,7 @@ public class BankAccount {
         return null;
     }
 
+<<<<<<< Updated upstream
     public static void main(String[] args) {
         BankAccount account = new BankAccount();
         account.name = "Benson";
@@ -48,3 +49,6 @@ public class BankAccount {
     }
 }
 
+=======
+}
+>>>>>>> Stashed changes
