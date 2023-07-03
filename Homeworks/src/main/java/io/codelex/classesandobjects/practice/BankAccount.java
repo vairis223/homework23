@@ -35,20 +35,6 @@ public class BankAccount {
         }
         return null;
     }
-
-<<<<<<< Updated upstream
-    public static void main(String[] args) {
-        BankAccount account = new BankAccount();
-        account.name = "Benson";
-        account.balance = -17.25;
-
-
-        System.out.println("Account Information:");
-        System.out.println("Name: " + account.name);
-        System.out.println("Balance: " + account);
-    }
 }
 
-=======
-}
->>>>>>> Stashed changes
+
