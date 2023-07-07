@@ -9,13 +9,23 @@ public class Exercise4 {
                 1458, 2458, 1254, 1472, 2365,
                 1456, 2265, 1457, 2456
         };
+        int find = 1245;
+        boolean containsValue = false;
 
-        /*
-        fixme - check if contains number 1245 
-        for (?) {
-            ......
-            System.out.println("Contains!");
+        //fixme - check if contains number 1245
+        for (int i = 0; i < myArray.length; ++i) {
+            if (myArray[i] == find) {
+                containsValue = true;
+                break;
+
+            }
+
         }
-        */
+        if (containsValue) {
+            System.out.println("Contains!");
+        } else {
+            System.out.println(("Does not contain!"));
+        }
     }
 }
+

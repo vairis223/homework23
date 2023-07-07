@@ -18,39 +18,39 @@ public class VideoStoreTest {
             int n = keyboard.nextInt();
 
             switch (n) {
-                case 0:
-                    System.exit(0);
-                case 1:
-                    fillVideoStore(keyboard);
-                    break;
-                case 2:
-                    rentVideo(keyboard);
-                    break;
-                case 3:
-                    returnVideo(keyboard);
-                    break;
-                default:
-                    break;
+                case 0 -> System.exit(0);
+                case 1 -> fillVideoStore(keyboard);
+                case 2 -> rentVideo(keyboard);
+                case 3 -> returnVideo(keyboard);
+                default -> System.out.println("Mistake in input. Please try again!");
+            }
             }
 
         }
-    }
+
 
     private static void fillVideoStore(Scanner scanner) {
         for (int i = 0; i < COUNT_OF_MOVIES; i++) {
-            System.out.println("Enter movie name");
-            String movieName = scanner.next();
-            System.out.println("Enter rating");
-            int rating = scanner.nextInt();
             //todo - add video
+            System.out.println("Enter video name: ");
+            String videoName = scanner.next();
+
+
+
         }
     }
 
     private static void rentVideo(Scanner scanner) {
         //todo - rent video
+        System.out.println("Enter movie name you want to rent: ");
+        String title = scanner.next();
+        VideoStore.checkOutVideo(title);
     }
 
     private static void returnVideo(Scanner scanner) {
         //todo - return video
+        System.out.println("Enter movie name that you want to return: ");
+        String title = scanner.next();
+        VideoStore.returnVideo(title);
     }
 }
